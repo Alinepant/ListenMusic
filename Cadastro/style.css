@@ -1,10 +1,10 @@
 body{
-    background-color: #f8f8f8;
+    background-color: #000000;
 }
 #form-container {
-    background-color: #5D11F4;
+    background-color: #f665be;
     border-radius: 20px;
-    box-shadow: .5px 10px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: .5px 10px 15px rgba(228, 52, 255, 0.2);
     margin: 25px auto;
     padding: 25px;
 }
@@ -23,30 +23,30 @@ body{
     transition: .5s;
 }
 #form-container a:hover{
-    color: #ffcb48ff;
+    color: #F430A8;
 }
 #form-container1 form {
     padding-bottom: 50px;
 }
 #form-container .form-control {
     border: none;
-    border-bottom: 1px solid #5D11F4;
+    border-bottom: 1px solid #000000;
     border-radius: 0;
 }
 #form-container .form-control:focus{
     box-shadow: none;
 }
 #form-container .form-floating label{
-    color: #ccc;
+    color: #000000;
 }
 #form-container .form-floating > .form-control:focus~label{
-    color: #222;
+    color: #5D11F4;
 }
 #form-container .form-check-input:checked,
 #form-container input[type="submit"] {
     color: #222;
-    background-color: #ffcb48ff;
-    border-color:#ffcb48ff;
+    background-color: #5D11F4;
+    border-color:#5D11F4;
 }
 
 .btn.btn-primary {
@@ -65,4 +65,3 @@ body{
     text-align: center;
     padding-top: 50px;
 }
-
