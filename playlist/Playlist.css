@@ -1,0 +1,34 @@
+*{
+     background-color: black; 
+    padding: 0;
+}
+.coiso {
+    margin-left: 10%;
+    color: white; 
+}
+header section{
+    margin-left: 78%;
+    margin-top: -3.2%;
+}
+.esquerda {
+    margin-left: 1%;
+    margin-top: -1%;
+}
+.PLM {
+    margin-left: 33%;
+    margin-top: -11%;
+}
+.imgPLM img{
+    height: 150px;
+    width: 145px;
+    margin-right: 8.5%;
+}
+.imgPLM {
+    margin-left: 33%;
+    margin-top: 1%;
+    background-color: #4C4C4C;
+    padding: 40px;
+}
+.PLM2 {
+    margin-top: 13%;
+}
