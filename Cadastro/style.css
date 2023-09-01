@@ -1,8 +1,11 @@
 body{
-    background-color: #000000;
+    background-color: #ffffff;
+}
+h2 {
+    color: #ffffff;
 }
 #form-container {
-    background-color: #f665be;
+    background-color: #000000;
     border-radius: 20px;
     box-shadow: .5px 10px 15px rgba(228, 52, 255, 0.2);
     margin: 25px auto;
@@ -19,7 +22,7 @@ body{
     margin-bottom: 30px;
 }
 #form-container a{
-    color: #222;
+    color: #ffffff;
     transition: .5s;
 }
 #form-container a:hover{
@@ -30,23 +33,23 @@ body{
 }
 #form-container .form-control {
     border: none;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #ffffff;
     border-radius: 0;
 }
 #form-container .form-control:focus{
     box-shadow: none;
 }
 #form-container .form-floating label{
-    color: #000000;
+    color: #392a2a;
 }
 #form-container .form-floating > .form-control:focus~label{
-    color: #5D11F4;
+    color: #6c3bcd;
 }
 #form-container .form-check-input:checked,
 #form-container input[type="submit"] {
-    color: #222;
-    background-color: #5D11F4;
-    border-color:#5D11F4;
+    color: #ffffff;
+    background-color: #8c35b8;
+    border-color:#8c35b8;
 }
 
 .btn.btn-primary {
