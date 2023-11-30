@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <main>
+        <div class="circulo"></div>
+
+        <!-- Header - Cabeçalho -->
+        <header>
+            <!-- Imagem Logo -->
+            <a href="#"><img src="assets/logo.png" alt="logo" class="logo"></a>
+
+            <!-- Div para o menu hamburguer (Telas menores) -->
+            <div class="toggle" onclick="toggleMenu();"></div>
+
+            <!-- Menu (Links) -->
+            <ul class="links">
+                <li><a href="https://www.starbucks.com.br/" target="_blank">Home</a></li>
+                <li><a href="https://www.starbucks.com.br/menu-list" target="_blank">Menu</a></li>
+                <li><a href="https://www.starbucks.com.br/responsabilidade" target="_blank">Novidades</a></li>
+                <li><a href="https://www.starbucks.com.br/lojas" target="_blank">Lojas</a></li>
+            </ul>
+        </header>
+
+        <!-- Conteúdo -->
+        <div class="conteudo">
+            <div class="textoprincipal">
+
+                <!-- Texto Principal -->
+                <h2>Não é apenas um café é: <br><span>Starbucks</span></h2>
+
+                <!-- Texto Secundário -->
+                <p>Descubra um mundo de sabores inesquecíveis com a Starbucks. Cada colherada é uma explosão de sabores
+                    irresistíveis que vão te conquistar!</p>
+
+                <!-- Botão -->
+                <a href="https://www.starbucks.com.br/" target="_blank">Veja mais</a>
+        
+            </div>
+
+            <!-- Imagem do sorvete grande (a direita) -->
+            <div class="imgBox"><img src="assets/img1.png" alt="Imagem 1" class="starbucks"></div>
+        </div>
+
+            <!-- Imagens dos sorvetes pequenos (abaixo) -->
+            <ul class="sorvetes">
+                <li><img src="assets/thumb1.png" alt="thumb1" onclick="imgSlider('assets/img1.png');changeCircleColor('#017143')"></li>
+                <li><img src="assets/thumb2.png" alt="thumb2" onclick="imgSlider('assets/img2.png');changeCircleColor('#eb7495')"></li>
+                <li><img src="assets/thumb3.png" alt="thumb3" onclick="imgSlider('assets/img3.png');changeCircleColor('#d752b1')"></li>
+            </ul>
+
+            <ul class="sociais">
+                <li><a href="https://pt-br.facebook.com/" target="_blank"><img src="assets/facebook.png" alt="facebook"></a></li>
+                <li><a href="https://twitter.com/" target="_blank"><img src="assets/twitter.png" alt="twitter"></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><img src="assets/instagram.png" alt="instagram"></a></li>
+            </ul>
+        
+            <!-- Link para o Javascript -->
+            <script src="mudar.js"></script>
+    </main>
+</body>
+
+</html>
