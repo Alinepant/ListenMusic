@@ -1,0 +1,597 @@
+/* Define uma fonte padrão para todos os elementos */
+* {
+    font-family: 'Montserrat',sans-serif;
+}
+
+/* Estilos gerais para o corpo da pagina */
+body {
+    background-color: #252525;
+    color: #fff;
+}
+
+/* Classes para diferentes cores do fundo */
+.primary-bg-color {
+    background-color: #252525;
+}
+.destaque {
+    background-color: #0d0d0d;
+}
+.secondary-bg-color {
+    background-color: #6339DD;
+}
+.light-bg-color {
+    background-color: #fcf5eb;
+}
+.dark-bg-color {
+    background-color: #0d0d0d;
+}
+
+/* Classes para diferentes cores de texto */
+.primary-color {
+    color: #6339DD;
+}
+.secondary-color {
+    color: #f2f2f2;
+}
+.light-color {
+    color: #fcf5eb;
+}
+/* ___________________________________________ */
+/* Estilos para a barra de navegação (navbar)*/
+
+/* Ajusta a direção e alinhamento dos itens da barra de navegação */
+#navbar .navbar-nav {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+/* Define margem a esquerda para os itens da barra de navegação */
+#navbar .navbar-nav {
+    margin-left: 1em;
+}
+
+/* Define a cor do texto e links na barra de navegação */
+#navbar a,
+#navbar button {
+    color: #fff;
+}
+
+/* Ajusta a posição dos itens da barra de navegação */
+#navbar li {
+    position: relative;
+}
+
+/* Define estilo para ícones na barra de navegação */
+#navbar i {
+    font-size: 20px;
+}
+
+/* Define estilos de cor quando mouse passa sobre os icones */
+#navbar i:hover {
+    color: #6339DD;
+}
+
+/* Define estilos para caixa com numero (ex: quantidade de itens) */
+#navbar span {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ef3636;
+    text-align: center;
+}
+
+/* Posiciona a caixa xom numero no item de sacola de compras */
+#bag-item span {
+    left: 20px;
+}
+/* Estilos para a marca/logo na barra de navegação */
+#navbar-brand {
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+}
+
+/* Estilos de hover para links 'sobre' */
+.sobre a:hover {
+    color: #0d0d0d !important; /* Importante para sobrepor outros estilos*/
+}
+
+/* Ajusta estilos quando largura da tela é maior que 768px */
+@media (min-width:768px) {
+    .navbar-brand {
+        text-align: left;
+    }
+}
+
+/* Ajusta espaçamento entre itens da barra de navegação */
+#navbar-items {
+    justify-content: space-between;
+}
+
+/* Ajusta espaçamento quando a largura é maior que 768px */
+@media(min-width: 768px) {
+    #navbar-items {
+        display: flex;
+        min-width: 80%;
+    }
+}
+
+/* Estilos para formularios de busca e mewletter */
+#search-form,
+#news-form {
+    width: 100%;
+    margin: 2em 0;
+}
+
+/* Ajusta largura  e margem quando a largura da tela é maior que 768px*/
+@media(min-width:768px) {
+    #search-form,
+    #news-form {
+        width: 50%;
+        margin: 0;
+    }
+}
+
+/* Estilos para campos de input em formularios */
+
+#search-form,
+#news-form {
+    border: 2px solid #f2f2f2;
+    border-radius: 3px;
+    padding: 5px 15px;
+}
+
+#search-form input,
+#news-form input {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+
+#search-form input:focus,
+#news-form  input:focus {
+     box-shadow: none;
+}
+
+#search-form input::placeholder,
+#news-form  input::placeholder {
+    color: #fff;
+}
+
+/* _________________________________________ */
+/* Estilos para barra de navegação inferior (bottom-navbar) */
+
+#bottom-navbar-container .container {
+    justify-content: flex-end;
+}
+
+#bottom-navbar-container a {
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Define tamanho de icone do botão para mostrar/esconder o menu */
+.navbar-toggler {
+    font-size: 1.5em;
+}
+
+/* ________________________________________________ */
+/* Estilos para os banner */
+
+/* Define espaçamento interno para o conteiner de banners */
+#banners-container {
+    padding: 0;
+}
+
+/* Posicionamento eespaçamento para a legenda do carousel */
+.carousel-caption {
+    bottom: 5em;
+    padding: 1em;
+    left: 12%;
+    right: 12%;
+}
+
+/* Estilos para o titulo na legenda do carousel */
+.carousel-caption h5 {
+    font-size: 1.8em;
+}
+
+/* Media query para telas com largura minima de 768px */
+@media(min-width: 768px) {
+    /* Ajusta altura dos itens do carousel e imagens */
+    #slider .carousel-item,
+    #slider img {
+        height: 600px;
+    }
+
+    /* Ajusta posicionamento e espaçamento da legenda do carousel */
+    .carousel-caption {
+        left: 23%;
+        right: 23%;
+    }
+
+    /* Ajusta tamanho do titulo na legenda do carousel */
+    .carousel-caption h5 {
+         font-size: 4em;
+    }
+}
+
+    /* Estilos para os mini banners */
+    /* Ajusta margem superior para sobrepor os banner principais */
+    #mini-banners {
+        margin-top: -3em;
+        z-index: 10;
+    }
+
+    /* Estilos para colunas dos mini banners */
+    #mini-banners .col-12 {
+        z-index: 1;
+        height: 300px;
+        padding: 1.5em;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+    /* Media query para telas com larguras minima de 768px */
+    @media(min-width: 768px) {
+        /* Ajusta largura maxima das colunas dos mini banners */
+        #mini-banners .col-12 {
+            max-width: 30%;
+        }
+
+        /* Ajusta tamanho do titulo nos mini banners */
+        #mini-banners .col-12 h2 {
+            font-size: 2.2em;
+        }
+    }
+
+    /* Estilos para as imagens nos mini banners */
+    #mini-banners .col-12 h2 {
+        text-transform: uppercase;
+        max-width: 50px;
+        font-size: 1.3em;
+        font-weight: 700;
+        line-height: 1em;
+    }
+
+    /* Estilos para as iamgens nos mini banners */
+    #mini-banners .col-12 img {
+        height: 220px;
+        position: absolute;
+        right: 1rem;
+        bottom: 1rem;
+    }
+
+    /* Estilos para os liks nos mini banners */
+    #mini-banners .col-12 a {
+        font-weight: bold;
+        color: #fff;
+        font-size: .8rem;
+        transition: .5s
+    }
+
+    /* Estilos de hover para links nos mini banners */
+    #mini-banners .col-12 a:hover {
+        color: #0d0d0d;
+    }
+
+    /* Estilos especifico para o primeiro mini banner */
+    #mini-banners #mini-banner-1 a:hover {
+        color: #6339DD;
+    }
+
+    /* Estilos especifico para o terceiro mini banner */
+       #mini-banners #mini-banner-3 a {
+        color: #0d0d0d;
+    }
+
+    /* Estilos de hover especifico para o terceiro mini banner */
+       #mini-banners #mini-banner-3 a:hover {
+        color: #6339DD;
+    }
+
+    /* __________________________________________________ */
+    /* BEST SELLERS */
+
+    /* Define altura e ajusta o redimensionamento das imagens nos cartões */
+    .card-img-top {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    /* Define espaçamento interno para aseçõa dde best sellers */
+    #best-sellers {
+        padding: 4em 0;
+    }
+
+    /* Remove margens horizontais para linha de produtos */
+    #best-sellers .row {
+        margin: 0;
+    }
+
+    /* Ajusta o espaçamento interno das colunas dos produtos */
+    #best-sellers .col-md-3 {
+        padding: 0;
+    }
+
+    /* Estilos para titulo da seção */
+    .title {
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 2.5em;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+
+    @media(min-width:768px) {
+        /* Ajusta o alinhamento do titulo para esquerda */
+        .title {
+            text-align: left;
+        }
+
+    }
+
+    /* Estilos para os preços */
+    .original-price {
+        font-size: 18px;
+        color: #f2f2f2;
+        text-decoration: line-through;
+        margin-left: 10px;
+    }
+
+    .discount-price {
+        font-size: 24px;
+        color: #6339DD; /* Cor destacada para o preço mais baixo*/
+    }
+
+    /* Estilos para os cartões de produtos */
+    .card {
+        text-align: center;
+        border-radius: 0;
+    }
+
+    /* Ajusta o tamanho da imagem nos cartões */
+    .card img {
+        width: 250px;
+        margin: 2em auto;
+    }
+
+    /* Estilos para a categoria do produto nos cartões*/
+    .card .card-category {
+        font-size: .8rem;
+    }
+
+   
+    /* Estilos para os textos nos cartões*/
+    .card .card-text {
+        margin: 2em 0;
+        font-weight: bold;
+    }
+
+    /* Estilos para os botões de compra */
+    .btn {
+        background-color: transparent;
+        border-color: #6339DD;
+    }
+
+    /* Estilos de hover para os botões de compra */
+    .btn:hover {
+        background-color: #6339DD;
+        border-color: #6339DD;
+    }
+
+    /* ____________________________________________________ */
+    /* BOTTOM BANNER */
+
+    /* Define cor de fundo , espaçamento interno e margens para o banner */
+    #bottom-banner {
+        background-color: #0d0d0d;
+        padding: 6em;
+        margin-bottom: 4em;
+        text-align: center;
+    }
+
+    /* Define estilo para subtitulo da oferta e titulo */
+    #bottom-banner .offer-subtitle,
+    #bottom-banner h2 {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    /* Define tamanho maximo para imagem */
+    #bottom-banner img {
+        max-width: 250px;
+    }
+
+    @media(min-width:768px) {
+        /* Ajusta tamanho do titulo para telas maiores */
+        #bottom-banner h2 {
+            font-size: 5em;
+        }
+    }
+
+    /* ____________________________________________________ */
+    /* (Novidades)NEW PRODUCTS */
+
+    /* Define margem inferior para a seção de Novidades */
+    #new-products {
+        margin-bottom: 5rem;
+    }
+
+    /* Estilos para o banner de Novidades */
+    #new-products-banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #0d0d0d;
+    }
+
+   
+    /* Estilos para o titulo do banner de Novidades */
+    #new-products-banner h3 {
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        font-size: 2rem
+    }
+
+   
+    /* Ajusta o espaçamento interno das colunas nos cartões de produtos */
+    #new-products .col-md-4 {
+        padding: 0;
+    }
+
+   
+    /* Define tamanho e margem para as imagens nos cartões de produtos */
+    #new-products .card img {
+        height: 150px;
+        width: 160px;
+        margin: 2em auto;
+    }
+
+    /* ____________________________________________________________--- */
+    /* GALLERY */
+
+    /* Estilos para os containers das imagens */
+    #gallery .image-container {
+        background-size: cover;
+        background-position: center;
+        height: 225px;
+        cursor: pointer;
+        transition: .5s;
+        border: 3px solid #0d0d0d;
+    }
+
+    #gallery .image-container:hover {
+        border-color: #6339DD;
+    }
+
+    /* Defina a imagem de fundo para cada contianer */
+    #insta1 {
+        background-image: url(../img/insta1.jpg);
+    }
+
+    #insta2 {
+        background-image: url(../img/insta2.jpg);
+    }
+    #insta3 {
+        background-image: url(../img/insta3.jpg);
+    }
+    #insta4 {
+        background-image: url(../img/insta4.jpg);
+    }
+    #insta5 {
+        background-image: url(../img/insta5.jpg);
+    }
+    #insta6 {
+        background-image: url('../img/insta6.jpg');
+    }
+   
+    /* ___________________________________________________ */
+    /* FOOTER */
+
+    #footer-links-container {
+        border-bottom: 1px solid #f2f2f2;
+    }
+
+    #footer .footer-column {
+        padding: 2em;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    @media(min-width:795px) {
+        #footer .footer-column {
+            padding: 5em 2em;
+        }
+    }
+
+    #footer-links-container h3 {
+        margin-bottom: 25px;
+        text-transform: uppercase;
+    }
+
+    #footer-links-container li {
+        font-size: .8em;
+        text-align: center;
+    }
+
+    #footer-links-container li a {
+        text-decoration: none;
+    }
+
+    #footer-links-container li a:hover {
+        color: #6339DD;
+    }
+
+    #footer-center {
+        border-left: 1px solid #f2f2f2;
+        border-right: 1px solid #f2f2f2;
+    }
+
+    #footer-center h3 {
+        font-weight: 900;
+    }
+   
+    #footer-center .store-phone {
+        color: #976df2;
+        font-weight: bold;
+        font-size: 2rem;
+        margin-top: -15px;
+    }
+
+    /* _____________________________________________________--- */
+    /* NEWS */
+
+    #newsletter-container {
+        background-color: #0d0d0d;
+        border-bottom: 1px solid #f2f2f2;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #news-form {
+        max-width: 600px;
+        margin: 15px auto;
+    }
+
+    #news-form i {
+        font-size: 1.5em;
+    }
+   
+    #news-form .btn {
+        color: #fff;
+    }
+
+    #social-container {
+        margin: 20px auto;
+    }
+
+    #social-container i {
+        font-size: 1.5em;
+        margin: 10px;
+        cursor: pointer;
+        color: #f2f2f2;
+        transition: .3s;
+    }
+
+    #social-container i:hover {
+        color: #6339DD;
+    }
+
+    /* ___________________________________________- */
+    /* COPY */
+
+    #copy-container {
+        text-align: center;
+        padding: 30px;
+    }
