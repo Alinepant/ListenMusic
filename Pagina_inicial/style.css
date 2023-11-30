@@ -1,0 +1,305 @@
+/* Reset básico */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+html {
+    /* Variáveis do CSS */
+
+    --corPrimaria: #017143;
+
+    --corSecundaria: #333;
+
+    --corTerciaria: #fff;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--corTerciaria);
+}
+
+/* Cabeçalho (Header) */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px; /* O padding de 100px deixará uma folga lateral */
+    display: flex; /* Organizar o cabeçalho */
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    position: relative;
+    max-width: 80px;
+}
+
+header .logo:hover {
+    filter: invert(0.1);
+}
+
+header ul {
+    position: relative;
+    display: flex; /* Coloca os links em linha */
+}
+
+header ul li {
+    list-style: none; /*Remove os marcadores das listas*/
+}
+
+header ul li a {
+    display: inline-block;
+    color: var(--corSecundaria);
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 40px; /* Espaçamento entre os links */
+    text-decoration: none; /* Remove o underline */
+    padding: 5px;
+}
+
+header ul li a:hover {
+    background-color: var(--corPrimaria);
+    color: var(--corTerciaria);
+    border-radius: 10px;
+}
+
+/* Conteúdo */
+.conteudo {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteudo .textoprincipal {
+    position: relative;
+    max-width: 600px;
+}
+
+.conteudo .textoprincipal h2 {
+    color: var(--corSecundaria);
+    font-size: 2.5em;
+    line-height: 1.5em;
+    font-weight: 500;
+}
+
+.conteudo .textoprincipal h2 span {
+    color: var(--corPrimaria);
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.conteudo .textoprincipal p {
+    color: var(--corSecundaria);
+}
+
+.conteudo .textoprincipal a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: var(--corPrimaria);
+    color: var(--corTerciaria);
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px; /* Espaçamento entre as letras */
+    text-decoration: none;
+}
+
+.conteudo .textoprincipal a:hover {
+    background: var(--corSecundaria);
+    color: var(--corTerciaria);
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px; /* Espaçamento entre as letras */
+    text-decoration: none;
+}
+
+/* Imagem do sorvete */
+.conteudo .imgBox {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+
+.conteudo .imgBox img {
+    max-width: 340px;
+}
+
+/* Imagens dos sorvetes pequenos */
+.sorvetes {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.sorvetes li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.sorvetes li:hover {
+    transform: translateY(-15px);
+}
+
+.sorvetes li img {
+    max-width: 60px;
+}
+
+/* Imagens das Redes Sociais */
+.sociais {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sociais li {
+    list-style: none;
+}
+
+.sociais li a {
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6); /* Reduz o tamanho dos ícones */
+    filter: invert(1); /* Inverte a cor para branco */
+}
+
+.sociais li a:hover {
+    color: var(--corSecundaria);
+    filter: invert(0);
+}
+
+/* Círculo */
+.circulo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--corPrimaria);
+
+    /* Tamanho > Lado > Posição */
+    clip-path: circle(600px at right 800px);
+}
+
+/* Responsividade */
+/* Dispositivos pequenos (Tablets e telefones grandes, 600px ou maior) */
+/* Dispositivos médios (tablets, 768px ou maior) */
+/* Dispositivos grandes (laptops e desktops, 1200px ou maior) */
+
+/* Abaixo de 992px */
+@media (max-width: 992px) {
+
+    header {
+        padding: 20px;
+    }
+
+    header .logo {
+        max-width: 60px; 
+    }
+
+    header ul {
+        display: none; /* Esconde o menu abaixo de 992px */
+    }
+
+    /* Menu Hamburguer */
+    .toggle {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background: url(assets/menu.png); /* Imagem do Hamburguer */
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: invert(1);
+        z-index: 11;
+    }
+
+    .toggle.active {
+        position: fixed;
+        right: 20px;
+        background: url(assets/close.png); /* Imagem do X (Fechar) */
+        background-size: 25px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    /* Menu Hamburguer ativado (Forma a lista) */
+    header ul.links.active {
+        position:fixed;
+        top: 0;
+        left: 0;
+        width: 100%; /* Largura da lista do Hamburguer quando ativo */
+    }
+
+    header ul li a {
+        font-size: 1.5em;
+        margin: 5px 0;
+    }
+
+    /* Neste ponto fazer o JS (1ª função) */
+
+    /* Conteúdo */
+    main {
+        padding: 20px 20px 120px;
+    }
+
+    .conteudo {
+        flex-direction: column; /* Jogo o conteúdo em coluna (blocos) */
+        margin-top: 100px;
+    }
+
+    .conteudo .textoprincipal h2 {
+        font-size: 2.5em;
+        margin-bottom: 15px;
+    }
+
+    .conteudo .textoprincipal {
+        max-width: 100%;
+    }
+
+    .conteudo .imgBox {
+        max-width: 300px;
+    }
+
+    .thumb li img {
+        max-width: 40px;
+    }
+
+    .circulo {
+        clip-path: circle(400px at center bottom);
+    }
+
+    .sociais {
+        background: var(--corPrimaria);
+        right: 0;
+        width: 50px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    /* Fazer o restante do JS (2ª e 3ª funções) */
+}
