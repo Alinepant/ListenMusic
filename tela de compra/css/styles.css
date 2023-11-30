@@ -36,7 +36,7 @@ body {
 .light-color {
     color: #fcf5eb;
 }
-/* _______________ */
+/* ___________________________________________ */
 /* Estilos para a barra de navegação (navbar)*/
 
 /* Ajusta a direção e alinhamento dos itens da barra de navegação */
@@ -161,7 +161,7 @@ body {
     color: #fff;
 }
 
-/* _______________ */
+/* _________________________________________ */
 /* Estilos para barra de navegação inferior (bottom-navbar) */
 
 #bottom-navbar-container .container {
@@ -178,7 +178,7 @@ body {
     font-size: 1.5em;
 }
 
-/* ________________ */
+/* ________________________________________________ */
 /* Estilos para os banner */
 
 /* Define espaçamento interno para o conteiner de banners */
@@ -296,7 +296,7 @@ body {
         color: #6339DD;
     }
 
-    /* __________________ */
+    /* __________________________________________________ */
     /* BEST SELLERS */
 
     /* Define altura e ajusta o redimensionamento das imagens nos cartões */
@@ -386,7 +386,7 @@ body {
         border-color: #6339DD;
     }
 
-    /* __________________ */
+    /* ____________________________________________________ */
     /* BOTTOM BANNER */
 
     /* Define cor de fundo , espaçamento interno e margens para o banner */
@@ -416,7 +416,7 @@ body {
         }
     }
 
-    /* __________________ */
+    /* ____________________________________________________ */
     /* (Novidades)NEW PRODUCTS */
 
     /* Define margem inferior para a seção de Novidades */
@@ -456,7 +456,7 @@ body {
         margin: 2em auto;
     }
 
-    /* ____________________--- */
+    /* ____________________________________________________________--- */
     /* GALLERY */
 
     /* Estilos para os containers das imagens */
@@ -494,7 +494,7 @@ body {
         background-image: url('../img/insta6.jpg');
     }
    
-    /* _________________ */
+    /* ___________________________________________________ */
     /* FOOTER */
 
     #footer-links-container {
@@ -549,7 +549,7 @@ body {
         margin-top: -15px;
     }
 
-    /* ___________________--- */
+    /* _____________________________________________________--- */
     /* NEWS */
 
     #newsletter-container {
@@ -588,7 +588,7 @@ body {
         color: #6339DD;
     }
 
-    /* _______________- */
+    /* ___________________________________________- */
     /* COPY */
 
     #copy-container {
