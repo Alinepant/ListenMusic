@@ -59,7 +59,7 @@ header ul {
 }
 
 header ul li {
-    list-style: none; /*Remove os marcadores das listas*/
+    list-style: none; /Remove os marcadores das listas/
 }
 
 header ul li a {
