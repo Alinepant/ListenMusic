@@ -358,7 +358,7 @@ body {
 
     /* Ajusta o tamanho da imagem nos cartões */
     .card img {
-        width: 250px;
+        width: 200px;
         margin: 2em auto;
     }
 
