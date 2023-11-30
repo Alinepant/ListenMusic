@@ -1,11 +1,13 @@
 /* Reset básico */
 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins';
+    font-family: 'Montserrat', sans-serif;
 }
+
 
 html {
     /* Variáveis do CSS */
@@ -42,7 +44,7 @@ header {
 
 header .logo {
     position: relative;
-    max-width: 80px;
+    max-width: 200px;
 }
 
 header .logo:hover {
@@ -85,19 +87,19 @@ header ul li a:hover {
 
 .conteudo .textoprincipal {
     position: relative;
-    max-width: 600px;
+    max-width: 900px;
 }
 
 .conteudo .textoprincipal h2 {
     color: var(--corSecundaria);
-    font-size: 2.5em;
+    font-size: 3.5em;
     line-height: 1.5em;
-    font-weight: 500;
+    font-weight: 800;
 }
 
 .conteudo .textoprincipal h2 span {
     color: var(--corPrimaria);
-    font-size: 1.2em;
+    font-size: 2.2em;
     font-weight: 900;
 }
 
@@ -115,53 +117,57 @@ header ul li a:hover {
     font-weight: 500;
     letter-spacing: 1px; /* Espaçamento entre as letras */
     text-decoration: none;
+    
 }
 
 .conteudo .textoprincipal a:hover {
     background: var(--corSecundaria);
     color: var(--corTerciaria);
     border-radius: 40px;
-    font-weight: 500;
+    font-weight: 800;
     letter-spacing: 1px; /* Espaçamento entre as letras */
     text-decoration: none;
 }
 
+p{
+    font-size: 20px;
+}
 /* Imagem do sorvete */
 .conteudo .imgBox {
     width: 600px;
+    height: 500px ;
     display: flex;
     justify-content: flex-end;
-    padding-right: 50px;
-    margin-top: 50px;
+    padding-right: 10px;
+    margin-top: 20px;
 }
 
-.conteudo .imgBox img {
-    max-width: 340px;
-}
 
 /* Imagens dos sorvetes pequenos */
 .sorvetes {
     position: absolute;
     left: 50%;
-    bottom: 20px;
+    bottom: 10px;
     transform: translateX(-50%);
     display: flex;
 }
 
+
 .sorvetes li {
     list-style: none;
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 40px;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 1.5s;
 }
+
 
 .sorvetes li:hover {
     transform: translateY(-15px);
 }
 
-.sorvetes li img {
-    max-width: 60px;
+.sorvetes li img  {
+    max-width: 200px;
 }
 
 /* Imagens das Redes Sociais */
@@ -173,6 +179,8 @@ header ul li a:hover {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    width: ;
+
 }
 
 .sociais li {
@@ -282,11 +290,11 @@ header ul li a:hover {
     }
 
     .conteudo .imgBox {
-        max-width: 300px;
+        max-width: 340px;
     }
 
     .thumb li img {
-        max-width: 40px;
+        max-width: 50px;
     }
 
     .circulo {
