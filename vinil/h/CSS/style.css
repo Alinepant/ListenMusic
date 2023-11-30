@@ -452,7 +452,7 @@ body {
     /* Define tamanho e margem para as imagens nos cartões de produtos */
     #new-products .card img {
         height: 150px;
-        width: 90px;
+        width: 200px;
         margin: 2em auto;
     }
 
