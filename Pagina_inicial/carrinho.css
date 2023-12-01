@@ -1,0 +1,84 @@
+body {
+    font-family:'Montserrat',sans-serif; ;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 1em;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+}
+
+.produto {
+    background-color: #000000;
+    color: #ddd;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 1em;
+    padding: 1em;
+    width: 200px;
+    text-align: center;
+}
+
+
+
+.carrinho {
+    background-color: #eee;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;
+    width: 300px;
+}
+
+.carrinho ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.carrinho li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+.total {
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+.checkout-form {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;
+    width: 300px;
+}
+
+.checkout-form label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.checkout-form input {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+.checkout-form a {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
