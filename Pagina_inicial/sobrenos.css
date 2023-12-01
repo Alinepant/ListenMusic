@@ -192,3 +192,109 @@ article{
     top: 0;
     margin-top: -400px;
 }
+
+/* _________________ */
+    /* FOOTER */
+
+    #footer-links-container {
+        border-bottom: 1px solid #f2f2f2;
+    }
+
+    #footer .footer-column {
+        padding: 2em;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #0d0d0d;
+        color: #fff;
+    }
+
+    @media(min-width:795px) {
+        #footer .footer-column {
+            padding: 5em 2em;
+        }
+    }
+
+    #footer-links-container h3 {
+        margin-bottom: 25px;
+        text-transform: uppercase;
+    }
+
+    #footer-links-container li {
+        font-size: .8em;
+        text-align: center;
+    }
+
+    #footer-links-container li a {
+        text-decoration: none;
+    }
+
+    #footer-links-container li a:hover {
+        color: #976df2;
+    }
+
+    #footer-center {
+        border-left: 1px solid #f2f2f2;
+        border-right: 1px solid #f2f2f2;
+    }
+
+    #footer-center h3 {
+        font-weight: 900;
+    }
+   
+    #footer-center .store-phone {
+        color: #976df2;
+        font-weight: bold;
+        font-size: 2rem;
+        margin-top: -15px;
+    }
+
+    /* ___________________--- */
+    /* NEWS */
+
+    #newsletter-container {
+        background-color: #0d0d0d;
+        border-bottom: 1px solid #f2f2f2;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #news-form {
+        max-width: 600px;
+        margin: 15px auto;
+    }
+
+    #news-form i {
+        font-size: 1.5em;
+    }
+   
+    #news-form .btn {
+        color: #fff;
+    }
+
+    #social-container {
+        margin: 20px auto;
+    }
+
+    #social-container i {
+        font-size: 1.5em;
+        margin: 10px;
+        cursor: pointer;
+        color: #f2f2f2;
+        transition: .3s;
+    }
+
+    #social-container i:hover {
+        color: #976df2;
+    }
+
+    /* _______________- */
+    /* COPY */
+
+    #copy-container {
+        text-align: center;
+        padding: 30px;
+        background-color: #0d0d0d;
+        color: #fff;
+    }
