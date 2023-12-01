@@ -1,0 +1,300 @@
+/* Define uma fonte padrão para todos os elementos */
+* {
+    font-family: 'Montserrat',sans-serif;
+}
+
+/* Estilos gerais para o corpo da pagina */
+body {
+    background-color: #252525;
+    color: #fff;
+}
+
+/* Classes para diferentes cores do fundo */
+.primary-bg-color {
+    background-color: #252525;
+}
+.destaque {
+    background-color: #0d0d0d;
+}
+.secondary-bg-color {
+    background-color: #976df2;
+}
+.light-bg-color {
+    background-color: #fcf5eb;
+}
+.dark-bg-color {
+    background-color: #0d0d0d;
+}
+
+/* Classes para diferentes cores de texto */
+.primary-color {
+    color: #976df2;
+}
+.secondary-color {
+    color: #f2f2f2;
+}
+.light-color {
+    color: #fcf5eb;
+}
+/* _______________ */
+/* Estilos para a barra de navegação (navbar)*/
+
+/* Ajusta a direção e alinhamento dos itens da barra de navegação */
+#navbar .navbar-nav {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+/* Define margem a esquerda para os itens da barra de navegação */
+#navbar .navbar-nav {
+    margin-left: 1em;
+}
+
+/* Define a cor do texto e links na barra de navegação */
+#navbar a,
+#navbar button {
+    color: #fff;
+}
+
+/* Ajusta a posição dos itens da barra de navegação */
+#navbar li {
+    position: relative;
+}
+
+/* Define estilo para ícones na barra de navegação */
+#navbar i {
+    font-size: 20px;
+}
+
+/* Define estilos de cor quando mouse passa sobre os icones */
+#navbar i:hover {
+    color: #976df2;
+}
+
+/* Define estilos para caixa com numero (ex: quantidade de itens) */
+#navbar span {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ef3636;
+    text-align: center;
+}
+
+/* Posiciona a caixa xom numero no item de sacola de compras */
+#bag-item span {
+    left: 20px;
+}
+/* Estilos para a marca/logo na barra de navegação */
+#navbar-brand {
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+}
+
+/* Estilos de hover para links 'sobre' */
+.sobre a:hover {
+    color: #0d0d0d !important; /* Importante para sobrepor outros estilos*/
+}
+
+/* Ajusta estilos quando largura da tela é maior que 768px */
+@media (min-width:768px) {
+    .navbar-brand {
+        text-align: left;
+    }
+}
+
+/* Ajusta espaçamento entre itens da barra de navegação */
+#navbar-items {
+    justify-content: space-between;
+}
+
+/* Ajusta espaçamento quando a largura é maior que 768px */
+@media(min-width: 768px) {
+    #navbar-items {
+        display: flex;
+        min-width: 80%;
+    }
+}
+
+/* Estilos para formularios de busca e mewletter */
+#search-form,
+#news-form {
+    width: 100%;
+    margin: 2em 0;
+}
+
+/* Ajusta largura  e margem quando a largura da tela é maior que 768px*/
+@media(min-width:768px) {
+    #search-form,
+    #news-form {
+        width: 50%;
+        margin: 0;
+    }
+}
+
+/* Estilos para campos de input em formularios */
+
+#search-form,
+#news-form {
+    border: 2px solid #f2f2f2;
+    border-radius: 3px;
+    padding: 5px 15px;
+}
+
+#search-form input,
+#news-form input {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+
+#search-form input:focus,
+#news-form  input:focus {
+     box-shadow: none;
+}
+
+#search-form input::placeholder,
+#news-form  input::placeholder {
+    color: #fff;
+}
+
+/* _______________ */
+/* Estilos para barra de navegação inferior (bottom-navbar) */
+
+#bottom-navbar-container .container {
+    justify-content: flex-end;
+}
+
+#bottom-navbar-container a {
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Define tamanho de icone do botão para mostrar/esconder o menu */
+.navbar-toggler {
+    font-size: 1.5em;
+}
+
+article{
+    background-color: #0d0d0d;
+    color: #fff;
+}
+
+
+.container img {
+    float:right;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    top: 0;
+    margin-top: -400px;
+}
+
+/* _________________ */
+    /* FOOTER */
+
+    #footer-links-container {
+        border-bottom: 1px solid #f2f2f2;
+    }
+
+    #footer .footer-column {
+        padding: 2em;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #0d0d0d;
+        color: #fff;
+    }
+
+    @media(min-width:795px) {
+        #footer .footer-column {
+            padding: 5em 2em;
+        }
+    }
+
+    #footer-links-container h3 {
+        margin-bottom: 25px;
+        text-transform: uppercase;
+    }
+
+    #footer-links-container li {
+        font-size: .8em;
+        text-align: center;
+    }
+
+    #footer-links-container li a {
+        text-decoration: none;
+    }
+
+    #footer-links-container li a:hover {
+        color: #976df2;
+    }
+
+    #footer-center {
+        border-left: 1px solid #f2f2f2;
+        border-right: 1px solid #f2f2f2;
+    }
+
+    #footer-center h3 {
+        font-weight: 900;
+    }
+   
+    #footer-center .store-phone {
+        color: #976df2;
+        font-weight: bold;
+        font-size: 2rem;
+        margin-top: -15px;
+    }
+
+    /* ___________________--- */
+    /* NEWS */
+
+    #newsletter-container {
+        background-color: #0d0d0d;
+        border-bottom: 1px solid #f2f2f2;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #news-form {
+        max-width: 600px;
+        margin: 15px auto;
+    }
+
+    #news-form i {
+        font-size: 1.5em;
+    }
+   
+    #news-form .btn {
+        color: #fff;
+    }
+
+    #social-container {
+        margin: 20px auto;
+    }
+
+    #social-container i {
+        font-size: 1.5em;
+        margin: 10px;
+        cursor: pointer;
+        color: #f2f2f2;
+        transition: .3s;
+    }
+
+    #social-container i:hover {
+        color: #976df2;
+    }
+
+    /* _______________- */
+    /* COPY */
+
+    #copy-container {
+        text-align: center;
+        padding: 30px;
+        background-color: #0d0d0d;
+        color: #fff;
+    }

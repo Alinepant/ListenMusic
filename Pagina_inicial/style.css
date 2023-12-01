@@ -147,7 +147,7 @@ p{
 
 
 /* Imagens dos sorvetes pequenos */
-.sorvetes {
+.produtos {
     position: absolute;
     left: 50%;
     bottom: 10px;
@@ -156,7 +156,7 @@ p{
 }
 
 
-.sorvetes li {
+.produtos li {
     list-style: none;
     display: inline-block;
     margin: 0 40px;
@@ -165,11 +165,11 @@ p{
 }
 
 
-.sorvetes li:hover {
+.produtos li:hover {
     transform: translateY(-15px);
 }
 
-.sorvetes li img  {
+.produtos li img  {
     max-width: 200px;
 }
 
