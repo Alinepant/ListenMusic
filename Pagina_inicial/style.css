@@ -90,14 +90,14 @@ header ul li a:hover {
 
 .conteudo .textoprincipal {
     position: relative;
-    max-width: 900px;
+    max-width: 500px;
 }
 
 .conteudo .textoprincipal h2 {
     color: var(--corSecundaria);
     font-size: 3.5em;
     line-height: 1.5em;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .conteudo .textoprincipal h2 span {
@@ -133,11 +133,11 @@ header ul li a:hover {
 }
 
 p{
-    font-size: 20px;
+    font-size: 15px;
 }
 /* Imagem do sorvete */
 .conteudo .imgBox {
-    width: 600px;
+    width: 100px;
     height: 500px ;
     display: flex;
     justify-content: flex-end;
@@ -170,7 +170,7 @@ p{
 }
 
 .produtos li img  {
-    max-width: 200px;
+    max-width: 150px;
 }
 
 /* Imagens das Redes Sociais */

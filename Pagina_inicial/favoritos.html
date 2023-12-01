@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listen Music</title>
+</head>
+<body>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Link (Bootstrap) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+ 
+  <!-- Link para (Bootstrap Icons) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!-- Link CSS (Próprio) -->
+  <link rel="stylesheet" href="favoritados.css">
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous" defer></script>
+ 
+</head>
+<body>
+  <!-- NAVBAR -->
+
+  <!-- Primeira Barra de Navegação -->
+  <nav class="navbar navbar-expand-lg destaque py-4 px-2" id="navbar">
+    <div class="container">
+      <!-- Marca ou logo -->
+      <link rel="shortcut icon" href="logo.jpeg" type="image/x-icon">
+      <a class="navbar-brand" href="#">Listen Music</a>
+      
+      <!-- Items da barra de navegação -->
+      <div id="navbar-items">
+        <div></div>
+
+        <!-- Formulário de busca -->
+        <form class="d-flex" id="search-form">
+            <i class="bi bi-search primary-color"></i> <!--Ícone de pesquisa-->
+            <input class="form-control me-2" type="search" placeholder="Busque seu produto..." aria-label="Search">
+            <button class="btn secondary-bg-color" type="submit">Pesquisar</button>
+          </form>
+  
+          <!-- Ícones da barra de navegação -->
+          <ul class="navbar-nav mb-2 mb-lg-0" >
+            <li class="nav-item">
+              <a  class="nav-link" href="cadastro.html">
+                <i class="bi bi-person"></i><!--link para o perfil do usuário-->
+              </a>
+            </li>
+            <li class="nav-item">
+              <a  class="nav-link" href="favoritos.html">
+                <i class="bi bi-heart"></i><!--link para favoritos-->
+              </a>
+              <span class="qty-info">5</span><!--Quantidade de itens (ex:favoritos)-->
+            </li>
+            <li class="nav-item" id="bag-item">
+              <a  class="nav-link" href="carrinho.html">
+                <i class="bi bi-bag"></i><!--link para o carrinho-->
+                <b>R$761,90</b><!--Valor total do carrinho-->
+              </a>
+              <span class="qty-info">4</span> <!--Quantidade de itens no carrinho-->
+            </li>  
+          </ul>    
+        </div>
+      </div>
+    </nav>
+    <!-- Barra de Navegação Inferior -->
+
+  <nav class="navbar navbar-expand-lg secondary-bg-color p-2" id="bottom-navbar-container">
+    <div class="container">
+      <!-- Botão para mostrar/esconder o menu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bottom-navbar" aria-controls="bottom-navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list"></i><!--Ícone de lista (para menu mobile)-->
+      </button>
+
+      <!-- Itens do menu de navegação inferior -->
+      <ul class="navbar-nav mb-2 mb-lg-0 collapse navbar-collapse" id="bottom-navbar">
+        <li class="nav-item sobre">
+          <a class="nav-link" href="index.html">
+            Home
+          </a>
+        </li>
+        <li class="nav-item sobre">
+          <a class="nav-link" href="vinil.html">
+            Vinil
+          </a>
+        </li>
+        <li class="nav-item sobre">
+          <a class="nav-link" href="toca_disco.html">
+            Toca Disco
+          </a>
+        </li>
+        <li class="nav-item sobre">
+          <a class="nav-link" href="sobrenos.html">
+            Sobre nós
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ____________________________________________________________ -->
+  <!-- produtos -->
+  <div class="produtos">
+    <h2>Favoritados</h2>
+     <div class="produto">
+       <div class="imgproduto"> 
+        <img src="ThrillerLimited 40th Anniversary MoFi edition.png" width="200px" alt="">
+    </div> 
+        <h2>CD ThrillerLimited </h2>
+        <p>Título do CD: Thriller
+        <p>Artista: Michael Jackson</p>
+        <p>Gênero:Pop</p>
+        <p>Descrição: ThrillerLimited 40th Anniversary MoFi edition</p>
+        <p>R$ 661,90</p>
+        <button class="button">
+            <svg viewBox="0 0 448 512" class="svgIcon"><path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"></path></svg>
+          </button> 
+    </div>
+
+        <div class="produto2">
+           <div class="imgproduto"> 
+            <img src="CD THE WEEKND - STARBOY (DELUXE) - IMPORTADO.png" width="200px" alt="">
+        </div> 
+            <h2>CD THE WEEKND</h2>
+            <p>Título do CD: STARBOY
+            <p>Artista: The Weeknd</p>
+            <p>Gênero:Pop</p>
+            <p>Descrição:CD THE WEEKND-STARBOY (DELUXE) - IMPORTADO </p>
+            <p>R$ 100,00</p>
+            <button class="button">
+                <svg viewBox="0 0 448 512" class="svgIcon"><path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"></path></svg>
+              </button>
+        </div>
+
+        <div class="produto3">
+            <div class="imgproduto"> 
+             <img src="Back In Black180 gram edition.png" width="200px" alt="">
+         </div> 
+             <h2>CD Back in Black</h2>
+             <p>Título do CD: Back in Black
+             <p>Artista: AC/DC</p>
+             <p>Gênero:rock</p>
+             <p>Descrição:CD Back In Black 180 gram edition </p>
+             <p>R$ 113,90</p>
+             <button class="button">
+                 <svg viewBox="0 0 448 512" class="svgIcon"><path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"></path></svg>
+               </button>
+         </div>
+    </section>
+
+    <script src="script.js"></script>
+
+
+  <!-- __________________________________________________________ -->
+       <!-- FOOTER -->
+      <footer id="footer">
+       <div class="container-fluid" id="footer-links-container">
+         <div class="row">
+           <!-- Colunas para link de páginas -->
+           <div class="col-12 col-md-4 footer-column">
+             <h3>Páginas</h3>
+             <!-- Lista de link de página -->
+             <ul class="list-unstyled">
+               <li class="mb-2"><a href="#" class="secondary-color">Home</a></li>
+               <li class="mb-2"><a href="#" class="secondary-color">Vinil</a></li>
+               <li class="mb-2"><a href="#" class="secondary-color">Eletrônicos</a></li>
+               <li class="mb-2"><a href="#" class="secondary-color">Sobre nós</a></li>
+             </ul>
+           </div>
+           <div class="col-12 col-md-4 footer-column" id="footer-center">
+             <h3>Listen Music</h3>
+             <p class="secondary-color">Ligue para nós</p>
+             <p class="store-phone"><i class="bi bi-telephone"></i> (11)9123-4567</p>
+           </div>
+           <div class="col-12 col-md-4 footer-column">
+             <h3>Informações</h3>
+             <ul class="list-unstyled">
+               <li class="mb-2"><a href="sobrenos.html" class="secondary-color">Politica de Privacidade</a></li>
+               <li class="mb-2"><a href="carrinho.html" class="secondary-color">Politica de Entrega</a></li>
+               <li class="mb-2"><a href="carrinho.html" class="secondary-color">Rastreie seu pedido</a></li>
+             </ul>
+           </div>
+         </div>
+       </div>
+         <!-- Icones de redes sociais -->
+         <div class="col-12" id="social-container">
+           <i class="bi bi-facebook"></i>
+           <i class="bi bi-instagram"></i>
+           <i class="bi bi-twitter"></i>
+         </div>
+       </div>
+   
+       <!-- Texto de direitos autorais -->
+       <div class="container" id="copy-container">
+         <p>Alguns direitos reservados @2023 <span class="primary-color">ListenMusic</span> - confiavél e seguro</p>
+       </div>
+      </footer>
+   </body>
+   </html>
