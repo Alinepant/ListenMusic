@@ -130,6 +130,7 @@ header ul li a:hover {
     font-weight: 800;
     letter-spacing: 1px; /* Espaçamento entre as letras */
     text-decoration: none;
+    
 }
 
 p{
@@ -138,7 +139,7 @@ p{
 /* Imagem do sorvete */
 .conteudo .imgBox {
     width: 100px;
-    height: 500px ;
+    height: 400px ;
     display: flex;
     justify-content: flex-end;
     padding-right: 10px;
